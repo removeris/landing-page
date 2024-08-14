@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 196px;
+    padding: 0 256px;
 }
 
 .header h1 {
@@ -39,11 +39,12 @@ body {
 
 .hero {
     background-color: #1f2937;
-    padding: 96px 196px;
+    padding: 96px 256px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: stretch;
+    gap: 32px;
 }
 
 .flex-item {
@@ -79,7 +80,7 @@ body {
 
 .hero-image {
     text-align: center;
-    background-color: lightslategray;
+    background-color: gray;
     align-content: center;
     color:#e5e7eb;
 }
@@ -87,4 +88,41 @@ body {
 
 .hero button {
     max-width: fit-content;
+}
+
+/*Illustrations*/
+
+.illustrations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.illustration-header {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    gap: 48px;
+}
+
+.card {
+    display: flex;
+    max-width: 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #1F2937;
+}
+
+.card-image {
+    border:3px #3882F6 solid;
+    border-radius: 5%;
+    width: 150px;
+    height: 150px;
 }
