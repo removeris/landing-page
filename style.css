@@ -9,6 +9,17 @@ body {
     margin: 0;
 }
 
+button {
+    color: #f9faf8;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 4px 16px;
+}
+
+.flex-item1 {
+    flex: 1;
+}
+
 /*HEADER*/
 
 .header {
@@ -21,6 +32,7 @@ body {
 
 .header h1 {
     font-size: 24px;
+    margin: 0;
     color: #f9faf8;
 }
 
@@ -33,6 +45,21 @@ body {
     font-size: 18px;
     color: #e5e7eb;
     text-decoration: none;
+}
+
+/*FOOTER*/
+
+.header,
+.footer,
+.hero {
+    background-color: #1f2937;
+    padding: 32px 256px;
+}
+
+.footer {
+    color: #f9faf8;
+    text-align: center;
+    align-content: center;
 }
 
 /*HERO*/
@@ -73,9 +100,6 @@ body {
 .hero-container button {
     background-color: #3882F6;
     border: 5px #3882F6 solid;
-    border-radius: 20%;
-    padding: 4px 8px;
-    color:#e5e7eb;
 }
 
 .hero-image {
@@ -97,6 +121,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    padding: 56px;
 }
 
 .illustration-header {
@@ -118,11 +143,76 @@ body {
     align-items: center;
     text-align: center;
     color: #1F2937;
+    font-weight: 300;
 }
 
 .card-image {
     border:3px #3882F6 solid;
-    border-radius: 5%;
+    border-radius: 5px;
     width: 150px;
     height: 150px;
+}
+
+/*Quote*/
+
+.quote {
+    background-color: #e5e7eb;
+    padding: 64px 256px;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quote p {
+    margin: 0;
+    font-size: 36px;
+    font-weight: lighter;
+    max-width: 800px;
+    align-self: center;
+}
+
+.quote .author {
+    align-self: flex-end;
+    font-size: 24px;
+}
+
+/*Registration Box*/
+
+.registration {
+    padding: 86px 256px;
+}
+
+.reg-box {
+    background-color:#3882F6;
+    border:3px #3882F6 solid;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 48px 128px;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.reg-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.reg-container > * {
+    color: #f9faf8;
+}
+
+.reg-container .reg-header {
+    font-weight: bold;
+}
+
+.reg-box button {
+    background-color: inherit;
+    border: 1px #f9faf8 solid;
 }
